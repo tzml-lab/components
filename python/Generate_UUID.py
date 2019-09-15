@@ -1,2 +1,4 @@
 import uuid
-unique_ID = uuid.uuid1()
+name = "test_name"
+namespace = "test_namespace"
+uuid.uuid3(namespace, name)
