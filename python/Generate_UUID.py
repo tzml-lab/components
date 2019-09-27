@@ -1,4 +1,5 @@
-import uuid
-name = "test_name"
-namespace = "test_namespace"
-uuid.uuid3(namespace, name)
+uid = uuid.uuid1()
+s = hashlib.sha1()
+uid = str(uid)
+s.update(uid.encode("utf8"))
+print(s.hexdigest())
